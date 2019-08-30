@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ConfigSetting>
+  <ApplicationPath>C:\GIT\Installation\Application</ApplicationPath>
+  <ConfigPathLokal>C:\GIT\Installation\Application\easyWinArt-Config_Lokal.txt</ConfigPathLokal>
+  <ConfigPathEntwicklung>C:\GIT\Installation\Application\easyWinArt-Config_Entwicklung.txt</ConfigPathEntwicklung>
+  <ConfigPathProduktion>C:\GIT\Installation\Application\easyWinArt-Config_Produktion.txt</ConfigPathProduktion>  
+</ConfigSetting>

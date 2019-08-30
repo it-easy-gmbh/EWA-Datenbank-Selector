@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.EWA_Datenbank_Selector.Form1
+            Me.MainForm = Global.EWA_Datenbank_Selector.Main
         End Sub
     End Class
 End Namespace
