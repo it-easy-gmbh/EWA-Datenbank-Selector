@@ -58,6 +58,10 @@ Public Class Main
     End Sub
 
     Private Sub TauscheConfig(Typ As ConfigTyp)
+        If String.IsNullOrWhiteSpace(Settings.ApplicationPath) Then
+            MsgBox("Bitte erst die Einstellungen vornehmen")
+            Exit Sub
+        End If
         Dim zielDatei = Path.Combine(Settings.ApplicationPath, EwaConfigFile)
         Dim quellDatei As String = ""
         Select Case Typ
@@ -68,6 +72,10 @@ Public Class Main
             Case ConfigTyp.Produktion
                 quellDatei = Settings.ConfigPathProduktion
         End Select
+        If String.IsNullOrWhiteSpace(quellDatei) Then
+            MsgBox("Bitte erst die Einstellungen vornehmen")
+            Exit Sub
+        End If
         File.Copy(quellDatei, zielDatei, True)
         Me.TextBox1.Text = Typ.ToString
         MsgBox("Ok")
