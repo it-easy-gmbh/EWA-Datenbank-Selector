@@ -130,6 +130,9 @@ Partial Class Main
         Me.Controls.Add(Me.ButtonEinstellungen)
         Me.Controls.Add(Me.LabelHeadline)
         Me.Controls.Add(Me.LabelAktuelleConfig)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximumSize = New System.Drawing.Size(402, 333)
+        Me.MinimumSize = New System.Drawing.Size(402, 333)
         Me.Name = "Main"
         Me.Text = "Config-Selector"
         Me.GroupBoxWechsel.ResumeLayout(False)

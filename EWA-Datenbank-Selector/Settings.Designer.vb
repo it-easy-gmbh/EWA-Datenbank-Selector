@@ -50,15 +50,18 @@ Partial Class SettingsForm
         '
         'TextBoxApplication
         '
+        Me.TextBoxApplication.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBoxApplication.Location = New System.Drawing.Point(193, 50)
         Me.TextBoxApplication.Name = "TextBoxApplication"
         Me.TextBoxApplication.ReadOnly = True
-        Me.TextBoxApplication.Size = New System.Drawing.Size(235, 20)
+        Me.TextBoxApplication.Size = New System.Drawing.Size(404, 20)
         Me.TextBoxApplication.TabIndex = 1
         '
         'ButtonApplication
         '
-        Me.ButtonApplication.Location = New System.Drawing.Point(434, 50)
+        Me.ButtonApplication.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonApplication.Location = New System.Drawing.Point(603, 50)
         Me.ButtonApplication.Name = "ButtonApplication"
         Me.ButtonApplication.Size = New System.Drawing.Size(31, 20)
         Me.ButtonApplication.TabIndex = 2
@@ -68,7 +71,7 @@ Partial Class SettingsForm
         'ButtonSpeichern
         '
         Me.ButtonSpeichern.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonSpeichern.Location = New System.Drawing.Point(389, 162)
+        Me.ButtonSpeichern.Location = New System.Drawing.Point(558, 162)
         Me.ButtonSpeichern.Name = "ButtonSpeichern"
         Me.ButtonSpeichern.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSpeichern.TabIndex = 2
@@ -97,15 +100,18 @@ Partial Class SettingsForm
         '
         'TextBoxLokal
         '
+        Me.TextBoxLokal.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBoxLokal.Location = New System.Drawing.Point(193, 76)
         Me.TextBoxLokal.Name = "TextBoxLokal"
         Me.TextBoxLokal.ReadOnly = True
-        Me.TextBoxLokal.Size = New System.Drawing.Size(235, 20)
+        Me.TextBoxLokal.Size = New System.Drawing.Size(404, 20)
         Me.TextBoxLokal.TabIndex = 1
         '
         'ButtonLokal
         '
-        Me.ButtonLokal.Location = New System.Drawing.Point(434, 76)
+        Me.ButtonLokal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonLokal.Location = New System.Drawing.Point(603, 76)
         Me.ButtonLokal.Name = "ButtonLokal"
         Me.ButtonLokal.Size = New System.Drawing.Size(31, 20)
         Me.ButtonLokal.TabIndex = 2
@@ -123,15 +129,18 @@ Partial Class SettingsForm
         '
         'TextBoxEntwicklung
         '
+        Me.TextBoxEntwicklung.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBoxEntwicklung.Location = New System.Drawing.Point(193, 102)
         Me.TextBoxEntwicklung.Name = "TextBoxEntwicklung"
         Me.TextBoxEntwicklung.ReadOnly = True
-        Me.TextBoxEntwicklung.Size = New System.Drawing.Size(235, 20)
+        Me.TextBoxEntwicklung.Size = New System.Drawing.Size(404, 20)
         Me.TextBoxEntwicklung.TabIndex = 1
         '
         'ButtonEntwicklung
         '
-        Me.ButtonEntwicklung.Location = New System.Drawing.Point(434, 102)
+        Me.ButtonEntwicklung.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonEntwicklung.Location = New System.Drawing.Point(603, 102)
         Me.ButtonEntwicklung.Name = "ButtonEntwicklung"
         Me.ButtonEntwicklung.Size = New System.Drawing.Size(31, 20)
         Me.ButtonEntwicklung.TabIndex = 2
@@ -149,15 +158,18 @@ Partial Class SettingsForm
         '
         'TextBoxProduktion
         '
+        Me.TextBoxProduktion.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBoxProduktion.Location = New System.Drawing.Point(193, 128)
         Me.TextBoxProduktion.Name = "TextBoxProduktion"
         Me.TextBoxProduktion.ReadOnly = True
-        Me.TextBoxProduktion.Size = New System.Drawing.Size(235, 20)
+        Me.TextBoxProduktion.Size = New System.Drawing.Size(404, 20)
         Me.TextBoxProduktion.TabIndex = 1
         '
         'ButtonProduktion
         '
-        Me.ButtonProduktion.Location = New System.Drawing.Point(434, 128)
+        Me.ButtonProduktion.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonProduktion.Location = New System.Drawing.Point(603, 128)
         Me.ButtonProduktion.Name = "ButtonProduktion"
         Me.ButtonProduktion.Size = New System.Drawing.Size(31, 20)
         Me.ButtonProduktion.TabIndex = 2
@@ -168,20 +180,20 @@ Partial Class SettingsForm
         '
         Me.ButtonAbbrechen.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ButtonAbbrechen.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.ButtonAbbrechen.Location = New System.Drawing.Point(308, 162)
+        Me.ButtonAbbrechen.Location = New System.Drawing.Point(477, 162)
         Me.ButtonAbbrechen.Name = "ButtonAbbrechen"
         Me.ButtonAbbrechen.Size = New System.Drawing.Size(75, 23)
         Me.ButtonAbbrechen.TabIndex = 2
         Me.ButtonAbbrechen.Text = "Abbrechen"
         Me.ButtonAbbrechen.UseVisualStyleBackColor = True
         '
-        'Settings
+        'SettingsForm
         '
         Me.AcceptButton = Me.ButtonSpeichern
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ButtonAbbrechen
-        Me.ClientSize = New System.Drawing.Size(476, 197)
+        Me.ClientSize = New System.Drawing.Size(645, 197)
         Me.Controls.Add(Me.LabelHeadline)
         Me.Controls.Add(Me.ButtonAbbrechen)
         Me.Controls.Add(Me.ButtonSpeichern)
@@ -197,9 +209,9 @@ Partial Class SettingsForm
         Me.Controls.Add(Me.LabelLokal)
         Me.Controls.Add(Me.TextBoxApplication)
         Me.Controls.Add(Me.LabelApplication)
-        Me.MaximumSize = New System.Drawing.Size(492, 236)
+        Me.MaximumSize = New System.Drawing.Size(800, 236)
         Me.MinimumSize = New System.Drawing.Size(492, 236)
-        Me.Name = "Settings"
+        Me.Name = "SettingsForm"
         Me.Text = "Settings"
         Me.ResumeLayout(False)
         Me.PerformLayout()

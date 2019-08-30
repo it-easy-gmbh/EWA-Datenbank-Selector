@@ -83,7 +83,9 @@ Public Class Main
 
     Private Sub ButtonEinstellungen_Click(sender As Object, e As EventArgs) Handles ButtonEinstellungen.Click
         Dim settingsForm As New SettingsForm(Settings, SettingsXmlPath)
-        settingsForm.ShowDialog()
+        If settingsForm.ShowDialog() = DialogResult.OK Then
+            PrüfeAktuelleConfig()
+        End If
     End Sub
 
     Private Sub ButtonBeenden_Click(sender As Object, e As EventArgs) Handles ButtonBeenden.Click
