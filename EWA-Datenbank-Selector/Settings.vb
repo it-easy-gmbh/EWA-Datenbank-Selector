@@ -34,6 +34,11 @@ Public Class SettingsForm
         End If
     End Sub
 
+    ''' <summary>
+    ''' Klick auf den Button "Lokal"
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub ButtonLokal_Click(sender As Object, e As EventArgs) Handles ButtonLokal.Click
         BrowseFile(Me.TextBoxLokal)
     End Sub
