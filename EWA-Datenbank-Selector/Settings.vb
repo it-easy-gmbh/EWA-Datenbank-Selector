@@ -1,7 +1,6 @@
 ﻿Imports System.IO
 Imports System.Xml.Serialization
 
-
 Public Class SettingsForm
 
     Private Settings As ConfigSetting
