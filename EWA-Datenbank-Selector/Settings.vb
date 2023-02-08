@@ -15,6 +15,11 @@ Public Class SettingsForm
         Me.SettingsXmlPath = SettingsXmlPath
     End Sub
 
+    ''' <summary>
+    ''' Laden der Konstanten
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.TextBoxApplication.Text = Settings.ApplicationPath
         Me.TextBoxLokal.Text = Settings.ConfigPathLokal
@@ -29,6 +34,11 @@ Public Class SettingsForm
         End If
     End Sub
 
+    ''' <summary>
+    ''' Klick auf den Button "Lokal"
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub ButtonLokal_Click(sender As Object, e As EventArgs) Handles ButtonLokal.Click
         BrowseFile(Me.TextBoxLokal)
     End Sub
