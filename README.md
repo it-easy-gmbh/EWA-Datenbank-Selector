@@ -1,4 +1,4 @@
 # EWA-Datenbank-Selector
 Tool zum einfachen Austausch der Config-Datei
 
-Funktioniert gut
+Funktioniert gut, auch bei Regen
